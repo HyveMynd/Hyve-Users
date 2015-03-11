@@ -1,0 +1,25 @@
+{
+  "name": "user-module",
+  "version": "0.0.4",
+  "author": "HyveMynd",
+  "description": "A membership system patterened after devise",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:HyveMynd/user-module.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "mocha": "^1.20.1",
+    "should": "^4.0.4"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^2.9.6",
+    "date-utils": "^1.2.16",
+    "debug": "^2.1.0",
+    "hat": "0.0.3",
+    "moment": "^2.9.0",
+    "nodemailer": "^1.3.0",
+    "oriento": "^0.7.0"
+  }
+}
