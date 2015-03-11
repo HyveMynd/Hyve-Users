@@ -5,7 +5,7 @@ var assert = require("assert");
 var Registration = require('../lib/registration');
 var Auth = require('../lib/authentication');
 var should = require('should');
-var strategy = require('../strategies/OrientDbStrategy')('membership');
+var strategy = require('hyve-repo').getStrategy('orientdb')('localhost', '2424', 'root', 'password', 'membership');
 var UserRepo = require('../lib/UserRepository')(strategy);
 
 describe('Authentication', function () {

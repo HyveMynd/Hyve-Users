@@ -2,7 +2,7 @@
 * Created by Andres Monroy (HyveMynd) on 12/19/14.
 */
 var Registration = require('../lib/registration');
-var strategy = require('../strategies/OrientDbStrategy')('membership');
+var strategy = require('hyve-repo').getStrategy('orientdb')('localhost', '2424', 'root', 'password', 'membership');
 var userRepo = require('../lib/UserRepository')(strategy);
 var should = require('should');
 var config = require('../config');

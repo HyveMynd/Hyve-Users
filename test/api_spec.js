@@ -3,7 +3,7 @@
 */
 var Membership = require('../index.js');
 var assert = require('assert');
-var strategy = require('../strategies/OrientDbStrategy')('membership');
+var strategy = require('hyve-repo').getStrategy('orientdb')('localhost', '2424', 'root', 'password', 'membership');
 var UserRepo = require('../lib/UserRepository');
 
 describe("Main Api", function(){
